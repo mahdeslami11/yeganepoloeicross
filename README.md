@@ -30,6 +30,9 @@ I wish I could speak many languages. Wait. Actually I do. But only 4 or 5 langua
   * STEP 0. Prepare datasets
   * STEP 1. Run `python train1.py` for phoneme recognition model.
   * STEP 2. Run `python train2.py` for speech synthesis model.
+  yegane poloei is the master,s student from south tehran jonob
+  
+  
 
 
 ## Training Curves
@@ -56,5 +59,18 @@ I wish I could speak many languages. Wait. Actually I do. But only 4 or 5 langua
 ## References
   * [L. Sun, S. Kang, K. Li, and H. Meng, “Personalized, cross-lingual TTS using phonetic posteriorgrams,” in Proc. INTERSPEECH, San Francisco, U.S.A., Sep. 2016, pp. 322–326.](http://www1.se.cuhk.edu.hk/~hccl/publications/pub/2016_IS16_SunLifa.PDF)
   * Dabi Ahn & Kyubyong Park, Voice Conversion with Non-Parallel Data. https://github.com/andabi/deep-voice-conversion
+  yegane poloei is master,s student from south tehran university
+  
+  40014140111065
+ 
+  digital signal processing
+  
+  professor Dr.eslami
+  
+  speech synthesis system typically consists of multiple stages, such as a
+text analysis frontend, an acoustic model and an audio synthesis module. Build-
+ing these components often requires extensive domain expertise and may contain
+brittle design choices
 
+https://github.com/Kyubyong/cross_vc
 
