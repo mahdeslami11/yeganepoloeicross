@@ -1,0 +1,20 @@
+This paper presents a novel approach to personalized, cross-
+lingual TTS. PPGs obtained from an SI-ASR are regarded as
+a bridge across speakers and language boundaries. Therefore, a
+DBLSTM model is trained using PPGs of the target speaker’s
+data in a non-target language and the corresponding acoustic
+features, and this trained model can be driven to generate the
+target speaker’s speech in the target language by feeding the
+PPGs of synthesized speech output from any general TTS in
+the target language for arbitrary input text. This approach has
+a very low training data requirement of the target speaker’s
+speech recordings. In addition, it can very easily be applied
+to synthesizing a fixed target speaker’s speech in any language
+by just inserting an arbitrary TTS in that language.
+Experiments take a GMM-HMM-based TTS trained on
+a bilingual speaker’s speech in the target language as a
+benchmark. Evaluation results show that the proposed system
+trained on this bilingual speaker’s speech in the non-target
+language (e.g. 100 Mandarin utterances) is comparable to the
+benchmark (trained on 1,000 English utterances) in both speech
+quality and speaker similarity
