@@ -6,13 +6,27 @@ digital signal processing
 
 professor Dr.eslami
 
-A text to speech synthesis system typically consists of multiple stages, such as a
-text analysis frontend, an acoustic model and an audio synthesis module. Build
-ing these components often requires extensive domain expertise and may contain
-brittle design choices. In this paper, we present Tacotron, an end-to-end generative text to-speech model that synthesizes speech directly from characters. Given
-<text, audio> pairs, the model can be trained completely from scratch with random initialization. We present several key techniques to make the sequence-to-
-sequence framework perform well for this challenging task. Tacotron achieves a
-3.82 subjective 5-scale mean opinion score on US English, outperforming a pro-duction parametric system in terms of naturalness. In addition, since Tacotron
-generates speech at the frame level, it’s substantially faster than sample level autoregressive methods
-
+We present a novel approach that enables a target speaker
+(e.g. monolingual Chinese speaker) to speak a new language
+(e.g. English) based on arbitrary textual input. Our system in-
+cludes a trained English speaker-independent automatic speech
+recognition (SI-ASR) engine using TIMIT. Given the target
+speaker’s speech in a non-target language, we generate Phonetic
+PosteriorGrams (PPGs) with the SI-ASR and then train a Deep
+Bidirectional Long Short-Term Memory based Recurrent Neu-
+ral Networks (DBLSTM) to model the relationships between
+the PPGs and the acoustic signal. Synthesis involves input of
+arbitrary text to a general TTS engine (trained on any non-
+target speaker), the output of which is indexed by SI-ASR as
+PPGs. These are used by the DBLSTM to synthesize the target
+language in the target speaker’s voice. A main advantage of this
+approach has very low training data requirement of the target
+speaker which can be in any language, as compared with a
+reference approach of training a special TTS engine using many
+recordings from the target speaker only in the target language.
+For a given target speaker, our proposed approach trained on
+100 Mandarin (i.e. non-target language) utterances achieves
+comparable performance (in MOS and ABX test) of English
+synthetic speech as an HTS system trained on 1,000 English
+utterances.
 https://github.com/Kyubyong/cross_vc
